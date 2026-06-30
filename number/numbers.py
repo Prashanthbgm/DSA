@@ -1,5 +1,5 @@
 """closet number"""
-
+"""
 def closest(n,m):
     close=0
     minmum=float('inf')
@@ -13,3 +13,36 @@ def closest(n,m):
                 close=i 
     return close
 print(closest(13,4))
+"""
+# n=0
+# count=0
+# while n>=0:
+#     val=n%10
+#     n=n//10
+#     count+=1
+#     if n==0:
+#         break
+#     print(val)
+# print(count)
+
+"""consecutive numbers"""
+"""brute force"""
+def consecutive(num):
+    
+    for i in range(1,num):
+        check=0
+        for j in range(i,num):
+            check+=j
+            if check==num:
+                print("yes consecutive")
+                for k in range(i,j+1):
+                    print(k,end=" ")
+                return True
+
+            elif check>num:
+                break
+    return False 
+
+print(consecutive(10))
+
+    
