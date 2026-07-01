@@ -27,7 +27,7 @@ print(closest(13,4))
 
 """consecutive numbers"""
 """brute force"""
-def consecutive(num):
+"""def consecutive(num):
     
     for i in range(1,num):
         check=0
@@ -43,6 +43,12 @@ def consecutive(num):
                 break
     return False 
 
-print(consecutive(10))
+print(consecutive(10))"""
+
+def gcd(a,b):
+    if b==0:
+        return a
+    return gcd(b,a%b)
+print(gcd(60,90))
 
     
