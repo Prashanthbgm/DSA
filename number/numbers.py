@@ -45,10 +45,26 @@ print(closest(13,4))
 
 print(consecutive(10))"""
 
-def gcd(a,b):
+"""def gcd(a,b):
     if b==0:
         return a
     return gcd(b,a%b)
-print(gcd(60,90))
+print(gcd(30,60))"""
+
+"""Prime numbers between the ranges"""
+
+start=20
+end=100
+
+for n in range(start,end+1):
+    if n<1:
+        continue
+    isprime=True
+    for d in range(2,int(n**0.5)):
+        if n%d==0:
+            isprime=False
+    
+    if isprime:
+        print(n,end=",")
 
     
