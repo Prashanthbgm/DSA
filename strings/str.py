@@ -43,7 +43,7 @@
 #     left+=1
 #     right-=1
 """reverse the words"""
-sentence="hi Prashanth M"
+# sentence="hi Prashanth M"
 
 # left=0
 # right=len(sentence)-1
@@ -61,28 +61,63 @@ sentence="hi Prashanth M"
 # w=" ".join(words[::-1]) 
 # print(w)
 
-result=""
-current_w=""
+# result=""
+# current_w=""
 
-for i in range(len(sentence)-1,-1,-1):
-    char=sentence[i]
-    # print(char,end="")
+# for i in range(len(sentence)-1,-1,-1):
+#     char=sentence[i]
+#     # print(char,end="")
 
-    if char !=" ":
-        current_w=char+current_w
-        print(current_w)
-    else:
-        if current_w!="":
-            if result=="":
-                result=current_w
-            else:
-                result=result+" "+current_w
-        current_w=""
+#     if char !=" ":
+#         current_w=char+current_w
+#         print(current_w)
+#     else:
+#         if current_w!="":
+#             if result=="":
+#                 result=current_w
+#             else:
+#                 result=result+" "+current_w
+#         current_w=""
 
    
-if current_w!="":
-    if result=="":
-        result=current_w
-    else:
-        result=result+" "+current_w
-print(result)
+# if current_w!="":
+#     if result=="":
+#         result=current_w
+#     else:
+#         result=result+" "+current_w
+# print(result)
+"""Palindrome or not """
+# sentence="AMMA"
+
+# left=0
+# right=len(sentence)-1
+# is_plan=True
+# while left<right:
+#     if sentence[left]!=sentence[right]:
+#         is_plan=False
+#         print("its not a palindrome")
+#         break
+#     left+=1
+#     right-=1
+# if is_plan:
+#     print("its a palindrome")
+"""Count the Vowels"""
+# sentence="Appa"
+# s=set(sentence.lower())
+# check={"a","e","i","o","u"}
+# count=0
+# for ch in s:
+#     if ch in check:
+#         count+=1
+# print(count)
+"""Count the words in sentence"""
+# sentence="My appa is my hero"
+
+# count=0
+
+# for ch in range(len(sentence)):
+#     if sentence[ch]==" ":
+#         count+=1
+#     if sentence[ch]==sentence[-1]:
+#         count+=1
+# print(count)
